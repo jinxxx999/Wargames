@@ -1,6 +1,7 @@
 # Natas Level 12 → Level 13
 
-Target: Exploit a file upload vulnerability to achieve Remote Code Execution (RCE).
+### Description: 
+Achieve **Remote Code Execution (RCE)** by bypassing client-side restrictions and exploiting an **Insecure File Upload** vulnerability..
 
 ### 1. Vulnerability Analysis
 
