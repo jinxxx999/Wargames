@@ -11,8 +11,8 @@ function makeRandomPathFromFilename($dir, $fn) {
     $ext = pathinfo($fn, PATHINFO_EXTENSION);
     return makeRandomPath($dir, $ext);
 }
-The application does not verify the actual file content or type, only the extension provided in the filename field. This allows an attacker to upload a PHP script instead of an image.
 ```
+The application does not verify the actual file content or type, only the extension provided in the filename field. This allows an attacker to upload a PHP script instead of an image.
 
 ### 2. Exploit Preparation
 
