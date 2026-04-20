@@ -6,12 +6,13 @@ Target: Exploit a file upload vulnerability to achieve Remote Code Execution (RC
 
 The source code revealed that the server generates a random filename but takes the file extension directly from a hidden POST parameter filename.
 
-PHP
+```PHP
 function makeRandomPathFromFilename($dir, $fn) {
     $ext = pathinfo($fn, PATHINFO_EXTENSION);
     return makeRandomPath($dir, $ext);
 }
 The application does not verify the actual file content or type, only the extension provided in the filename field. This allows an attacker to upload a PHP script instead of an image.
+```
 
 ### 2. Exploit Preparation
 
